@@ -1,0 +1,11 @@
+ttk_add_base_library(persistenceDiagramDictDecoding
+  SOURCES
+    PersistenceDiagramDictDecoding.cpp
+  HEADERS
+    PersistenceDiagramDictDecoding.h
+  DEPENDS
+    common
+    persistenceDiagram
+    persistenceDiagramClustering
+    persistenceDiagramDistanceMatrix
+  )
