@@ -7,12 +7,17 @@
 
 #### import the simple module from the paraview
 from paraview.simple import *
+import sys
 #### disable automatic camera reset on 'Show'
 paraview.simple._DisableFirstRenderCameraReset()
 
 # ----------------------------------------------------------------
 # setup the data processing pipelines
 # ----------------------------------------------------------------
+
+a = int(sys.argv[1])
+
+
 # create a new 'XML Unstructured Grid Reader'
 darkMatterDgm38vtu = XMLUnstructuredGridReader(registrationName='DarkMatterDgm38.vtu', FileName=['DarkMatterDgm38.vtu'])
 darkMatterDgm38vtu.CellArrayStatus = ['Birth', 'IsFinite','PairIdentifier', 'PairType', 'Persistence']
@@ -273,10 +278,13 @@ tTKPersistenceDiagramDictEncoding1.Compressionfactor = 10.0
 tTKPersistenceDiagramDictEncoding1.Progressiveapproach = 1
 tTKPersistenceDiagramDictEncoding1.MaxEpoch = 1000
 tTKPersistenceDiagramDictEncoding1.UseAllCores = 0
-tTKPersistenceDiagramDictEncoding1.ThreadNumber = 1
+tTKPersistenceDiagramDictEncoding1.ThreadNumber = a
 
 
 UpdatePipeline(time=0.0, proxy=tTKPersistenceDiagramDictEncoding1)
 
 # set active source
-SetActiveSource(tTKPersistenceDiagramDictEncoding1)
+# ----------------------------------------------------------------
+# restore active source
+SaveData('DictionaryDarkMatter.vtm' , OutputPort(tTKPersistenceDiagramDictEncoding1 , 0))
+SaveData('WeightsDarkMatter.csv', OutputPort(tTKPersistenceDiagramDictEncoding1 , 1), Precision = 8)

@@ -7,12 +7,16 @@
 
 #### import the simple module from the paraview
 from paraview.simple import *
+import sys
 #### disable automatic camera reset on 'Show'
 paraview.simple._DisableFirstRenderCameraReset()
 
 # ----------------------------------------------------------------
 # setup the data processing pipelines
 # ----------------------------------------------------------------
+
+a = int(sys.argv[1])
+
 
 # create a new 'XML Unstructured Grid Reader'
 cloudDgm11vtu = XMLUnstructuredGridReader(registrationName='cloudDgm11.vtu', FileName=['wassersteinMergeTreesData/cloud/cloudDgm11.vtu'])
@@ -92,11 +96,11 @@ tTKPersistenceDiagramDictEncoding1.Compressionfactor = 6.0
 tTKPersistenceDiagramDictEncoding1.MaxEpoch = 1000
 tTKPersistenceDiagramDictEncoding1.UseAllCores = 0
 tTKPersistenceDiagramDictEncoding1.Progressiveapproach = 1
-tTKPersistenceDiagramDictEncoding1.ThreadNumber = 1
+tTKPersistenceDiagramDictEncoding1.ThreadNumber = a
 
 # ----------------------------------------------------------------
 # restore active source
-UpdatePipeline(time=0.0, proxy=tTKPersistenceDiagramDictEncoding1)
-
-# set active source
-SetActiveSource(tTKPersistenceDiagramDictEncoding1)
+# ----------------------------------------------------------------
+# restore active source
+SaveData('DictionaryIsabel.vtm' , OutputPort(tTKPersistenceDiagramDictEncoding1 , 0))
+SaveData('WeightsIsabel.csv', OutputPort(tTKPersistenceDiagramDictEncoding1 , 1), Precision = 8)

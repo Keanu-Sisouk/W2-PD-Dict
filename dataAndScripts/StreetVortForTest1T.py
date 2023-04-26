@@ -7,12 +7,16 @@
 
 #### import the simple module from the paraview
 from paraview.simple import *
+import sys
 #### disable automatic camera reset on 'Show'
 paraview.simple._DisableFirstRenderCameraReset()
 
 # ----------------------------------------------------------------
 # setup the data processing pipelines
 # ----------------------------------------------------------------
+
+a = int(sys.argv[1])
+
 
 # create a new 'XML Image Data Reader'
 vortexStreetGoodEnsemble2vti = XMLImageDataReader(registrationName='vortexStreetGoodEnsemble2.vti', FileName=['wassersteinMergeTreesData/data/vortexStreetGoodEnsemble2.vti'])
@@ -308,10 +312,11 @@ tTKPersistenceDiagramDictEncoding1.percentthreshold = 0
 tTKPersistenceDiagramDictEncoding1.Compressionfactor = 5.
 tTKPersistenceDiagramDictEncoding1.Progressiveapproach = 1
 tTKPersistenceDiagramDictEncoding1.UseAllCores = 0
-tTKPersistenceDiagramDictEncoding1.ThreadNumber = 1
+tTKPersistenceDiagramDictEncoding1.ThreadNumber = a
 
 
 UpdatePipeline(time=0.0, proxy=tTKPersistenceDiagramDictEncoding1)
 
-# set active source
-SetActiveSource(tTKPersistenceDiagramDictEncoding1)
+# restore active source
+SaveData('DictionaryStreetVortex.vtm' , OutputPort(tTKPersistenceDiagramDictEncoding1 , 0))
+SaveData('WeightsStreetVortex.csv', OutputPort(tTKPersistenceDiagramDictEncoding1 , 1), Precision = 8)

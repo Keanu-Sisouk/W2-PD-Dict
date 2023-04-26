@@ -7,12 +7,15 @@
 
 #### import the simple module from the paraview
 from paraview.simple import *
+import sys
 #### disable automatic camera reset on 'Show'
 paraview.simple._DisableFirstRenderCameraReset()
 
 # ----------------------------------------------------------------
 # setup the data processing pipelines
 # ----------------------------------------------------------------
+
+a = int(sys.argv[1])
 
 # create a new 'XML Unstructured Grid Reader'
 startVortDgm0vtu = XMLUnstructuredGridReader(registrationName='StartVortDgm0.vtu', FileName=['wassersteinMergeTreesData/data/StartVortNewDgms/StartVortDgm0.vtu'])
@@ -150,10 +153,11 @@ tTKPersistenceDiagramDictEncoding1.percentthreshold = 0.25
 tTKPersistenceDiagramDictEncoding1.Compressionfactor = 2.
 tTKPersistenceDiagramDictEncoding1.Progressiveapproach = 1
 tTKPersistenceDiagramDictEncoding1.UseAllCores = 0
-tTKPersistenceDiagramDictEncoding1.ThreadNumber = 1
+tTKPersistenceDiagramDictEncoding1.ThreadNumber = a
 
 
 UpdatePipeline(time=0.0, proxy=tTKPersistenceDiagramDictEncoding1)
 
-# set active source
-SetActiveSource(tTKPersistenceDiagramDictEncoding1)
+# restore active source
+SaveData('DictionaryStartingVortex.vtm' , OutputPort(tTKPersistenceDiagramDictEncoding1 , 0))
+SaveData('WeightsStartingVortex.csv', OutputPort(tTKPersistenceDiagramDictEncoding1 , 1), Precision = 8)
