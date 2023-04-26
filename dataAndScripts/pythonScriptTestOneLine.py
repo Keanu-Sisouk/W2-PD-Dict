@@ -16,12 +16,12 @@ for name in path:
     last_log = logs[-1]
     with open("log_file_test.txt", "w") as f:
         f.write(last_log)
-    print(last_log)
+    # print(last_log)
     with open("log_file_test.txt", "r") as f:
         lines = f.readlines()
         last_logs_list_prog.append(lines[-1])
-    # if os.path.exists("log_file_test.txt"):
-    #     os.remove("log_file_test.txt")
+    if os.path.exists("log_file_test.txt"):
+        os.remove("log_file_test.txt")
 
 
 
@@ -34,7 +34,7 @@ for log in last_logs_list_prog:
         time_str = match.group(1)
         time_seconds = float(time_str)
         time_prog.append(time_seconds)
-        print(time_seconds)
+        # print(time_seconds)
 
 
 dataName = ["Isabel"]
