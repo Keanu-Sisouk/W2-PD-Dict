@@ -35,7 +35,7 @@ a = input("Please chose the number of threads: ")
 #         os.remove("log_file_test.txt")
 #     # else:
 for name in path1:
-    result = subprocess.run(["$python", name, a], stdout=subprocess.PIPE,text=True)
+    result = subprocess.run(["$pvpython", name, a], stdout=subprocess.PIPE,text=True)
     logs = result.stdout.strip().split("\n")
     last_log = logs[-1]
     with open("log_file_test.txt", "w") as f:
