@@ -74,14 +74,13 @@ for log in last_logs_list_prog:
         time_prog.append(time_seconds)
         print(time_seconds)
 
-print(time_naiv)
 print(time_prog)
 dataName = ["Asteroid impact","Dark matter","Earthquake","Ionization Front 3D","Isabel","Viscous Fingering","Cloud processes",
     "Ionization Front 2D", "Sea Surface Height", "Starting Vortex", "Street Vortex","Volcanic eruptions"]
     
 print("+-------------------+")
 print("|{: <25}|{: <10}|".format("Data Set", "Progressive"))
-for name,t_naiv,t_prog in zip(dataName,time_naiv,time_prog):
+for name,t_naiv,t_prog in zip(dataName,time_prog):
     result = {"name": name, "progressive": t_prog}
     # Affichage avec délimitations graphiques
     print("+-------------------+")

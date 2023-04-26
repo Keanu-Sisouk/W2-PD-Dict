@@ -68,3 +68,6 @@ export LD_LIBRARY_PATH=$TTK_PREFIX/lib:$LD_LIBRARY_PATH
 export PYTHONPATH=$PYTHONPATH:$TTK_PREFIX/lib/python3.10/site-packages
 ```
 
+
+
+
