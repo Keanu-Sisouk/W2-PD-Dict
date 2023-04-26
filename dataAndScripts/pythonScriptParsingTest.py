@@ -40,7 +40,7 @@ for name in path1:
     last_log = logs[-1]
     with open("log_file_test.txt", "w") as f:
         f.write(last_log)
-    print(last_log)
+    # print(last_log)
     with open("log_file_test.txt", "r") as f:
         lines = f.readlines()
         last_logs_list_prog.append(lines[-1])
@@ -48,8 +48,8 @@ for name in path1:
         os.remove("log_file_test.txt")
 
 # print(last_logs_list_naiv)
-print(last_logs_list_prog)
-print("HALLO???!!!????")
+# print(last_logs_list_prog)
+# print("HALLO???!!!????")
 
 # for log in last_logs_list_naiv:
 #     line = log
