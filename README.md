@@ -49,7 +49,8 @@ export PYTHONPATH=$PV_PREFIX/lib/python3.10/site-packages
 Go in the `ttk-sisouk-newMethodCompression` directory then run the following commands:
 (replace the `5` in `make -j 5` by the number of available cores on your system)
 
-```mkdir build
+```
+mkdir build
 cd build
 paraviewPath=`pwd`/../../ttk-paraview/install/lib/cmake/paraview-5.9
 cmake -DCMAKE_INSTALL_PREFIX=../install -DEigen3_DIR=/usr/share/eigen3/cmake -DParaView_DIR=$paraviewPath ..
