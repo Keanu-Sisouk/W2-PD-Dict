@@ -28,9 +28,7 @@ cd ttk-paraview
 git checkout 5.10.0
 mkdir build
 cd build
-cmake -DCMAKE_BUILD_TYPE=Release -DPARAVIEW_USE_PYTHON=ON
--DPARAVIEW_INSTALL_DEVELOPMENT_FILES=ON
--DCMAKE_INSTALL_PREFIX=../install ..
+cmake -DCMAKE_BUILD_TYPE=Release -DPARAVIEW_USE_PYTHON=ON -DPARAVIEW_INSTALL_DEVELOPMENT_FILES=ON -DCMAKE_INSTALL_PREFIX=../install ..
 make -j 5
 make install -j 5
 ```
