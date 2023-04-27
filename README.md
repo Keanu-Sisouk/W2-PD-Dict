@@ -85,6 +85,7 @@ To reproduce the whole fifth column you can run:
 python3 pythonScriptParsingTest.py
 ```
 
+Note that it can take some time to get the whole column (e.g ~30 minutes overall on 20 threads).
 Both of those scripts will ask you the number of threads allocated for the experiments when the following
 sentence appears `Please chose the number of threads: ` type it and press enter.
 Some warnings and "errors" from Paraview are expected, they do not cause any problems.
