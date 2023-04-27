@@ -159,5 +159,5 @@ tTKPersistenceDiagramDictEncoding1.ThreadNumber = a
 UpdatePipeline(time=0.0, proxy=tTKPersistenceDiagramDictEncoding1)
 
 # restore active source
-SaveData('DictionaryStartingVortex.vtm' , OutputPort(tTKPersistenceDiagramDictEncoding1 , 0))
-SaveData('WeightsStartingVortex.csv', OutputPort(tTKPersistenceDiagramDictEncoding1 , 1), Precision = 8)
+SaveData('Outputs/DictionaryStartingVortex.vtm' , OutputPort(tTKPersistenceDiagramDictEncoding1 , 0))
+SaveData('Outputs/WeightsStartingVortex.csv', OutputPort(tTKPersistenceDiagramDictEncoding1 , 1), Precision = 8)

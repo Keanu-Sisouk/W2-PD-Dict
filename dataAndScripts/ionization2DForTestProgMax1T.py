@@ -141,5 +141,5 @@ UpdatePipeline(time=0.0, proxy=tTKPersistenceDiagramDictEncoding1)
 
 # ----------------------------------------------------------------
 # restore active source
-SaveData('DictionaryIon2D.vtm' , OutputPort(tTKPersistenceDiagramDictEncoding1 , 0))
-SaveData('WeightsIon2D.csv', OutputPort(tTKPersistenceDiagramDictEncoding1 , 1), Precision = 8)
+SaveData('Outputs/DictionaryIon2D.vtm' , OutputPort(tTKPersistenceDiagramDictEncoding1 , 0))
+SaveData('Outputs/WeightsIon2D.csv', OutputPort(tTKPersistenceDiagramDictEncoding1 , 1), Precision = 8)

@@ -51,5 +51,5 @@ tTKPersistenceDiagramDictEncoding1.ThreadNumber = a
 UpdatePipeline(time=0.0, proxy=tTKPersistenceDiagramDictEncoding1)
 
 # restore active source
-SaveData('DictionaryVolcanicEruption.vtm' , OutputPort(tTKPersistenceDiagramDictEncoding1 , 0))
-SaveData('WeightsVolcanicEruption.csv', OutputPort(tTKPersistenceDiagramDictEncoding1 , 1), Precision = 8)
+SaveData('Outputs/DictionaryVolcanicEruption.vtm' , OutputPort(tTKPersistenceDiagramDictEncoding1 , 0))
+SaveData('Outputs/WeightsVolcanicEruption.csv', OutputPort(tTKPersistenceDiagramDictEncoding1 , 1), Precision = 8)

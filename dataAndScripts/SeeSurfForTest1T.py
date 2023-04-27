@@ -321,5 +321,5 @@ tTKPersistenceDiagramDictEncoding1.ThreadNumber = a
 UpdatePipeline(time=0.0, proxy=tTKPersistenceDiagramDictEncoding1)
 
 # restore active source
-SaveData('DictionarySeaSurfaceHeight.vtm' , OutputPort(tTKPersistenceDiagramDictEncoding1 , 0))
-SaveData('WeightsSeaSurfaceHeight.csv', OutputPort(tTKPersistenceDiagramDictEncoding1 , 1), Precision = 8)
+SaveData('Outputs/DictionarySeaSurfaceHeight.vtm' , OutputPort(tTKPersistenceDiagramDictEncoding1 , 0))
+SaveData('Outputs/WeightsSeaSurfaceHeight.csv', OutputPort(tTKPersistenceDiagramDictEncoding1 , 1), Precision = 8)

@@ -115,5 +115,5 @@ UpdatePipeline(time=0.0, proxy=tTKPersistenceDiagramDictEncoding1)
 # set active source
 # ----------------------------------------------------------------
 # restore active source
-SaveData('DictionaryEarthQuake.vtm' , OutputPort(tTKPersistenceDiagramDictEncoding1 , 0))
-SaveData('WeightsEarthQuake.csv', OutputPort(tTKPersistenceDiagramDictEncoding1 , 1), Precision = 8)
+SaveData('Outputs/DictionaryEarthQuake.vtm' , OutputPort(tTKPersistenceDiagramDictEncoding1 , 0))
+SaveData('Outputs/WeightsEarthQuake.csv', OutputPort(tTKPersistenceDiagramDictEncoding1 , 1), Precision = 8)

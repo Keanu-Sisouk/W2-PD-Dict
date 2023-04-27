@@ -195,5 +195,5 @@ tTKPersistenceDiagramDictEncoding1.ThreadNumber = a
 UpdatePipeline(time=0.0, proxy=tTKPersistenceDiagramDictEncoding1)
 
 # restore active source
-SaveData('DictionaryViscousFingering.vtm' , OutputPort(tTKPersistenceDiagramDictEncoding1 , 0))
-SaveData('WeightsViscousFingering.csv', OutputPort(tTKPersistenceDiagramDictEncoding1 , 1), Precision = 8)
+SaveData('Outputs/DictionaryViscousFingering.vtm' , OutputPort(tTKPersistenceDiagramDictEncoding1 , 0))
+SaveData('Outputs/WeightsViscousFingering.csv', OutputPort(tTKPersistenceDiagramDictEncoding1 , 1), Precision = 8)

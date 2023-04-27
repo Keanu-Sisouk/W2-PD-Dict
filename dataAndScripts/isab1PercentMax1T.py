@@ -42,5 +42,5 @@ tTKPersistenceDiagramDictEncoding1.ThreadNumber = a
 UpdatePipeline(time=0.0, proxy=tTKPersistenceDiagramDictEncoding1)
 
 # restore active source
-SaveData('DictionaryIsabel.vtm' , OutputPort(tTKPersistenceDiagramDictEncoding1 , 0))
-SaveData('WeightsIsabel.csv', OutputPort(tTKPersistenceDiagramDictEncoding1 , 1), Precision = 8)
+SaveData('Outputs/DictionaryIsabel.vtm' , OutputPort(tTKPersistenceDiagramDictEncoding1 , 0))
+SaveData('Outputs/WeightsIsabel.csv', OutputPort(tTKPersistenceDiagramDictEncoding1 , 1), Precision = 8)
