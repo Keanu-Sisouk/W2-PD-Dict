@@ -86,7 +86,7 @@ python3 pythonScriptParsingTest.py
 
 Both of those scripts will ask you the number of threads allocated for the experiments when the following
 sentence appears `Please chose the number of threads: ` type it and press enter.
-Some warnings from Paraview are expected, they should not cause any problems.
+Some warnings and "errors" from Paraview are expected, they should not cause any problems.
 A time table will appear at the end in the terminal.
 The outputs of the experiments (the dictionary and the weights) can be found in the Outputs directory
 in a vtm format for the former and in a csv format for the latter.
