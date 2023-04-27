@@ -12,7 +12,7 @@ sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools qttools5-dev
 sudo apt-get install libqt5x11extras5-dev libqt5svg5-dev qtxmlpatterns5-dev-tools
 sudo apt install python3-sklearn
 sudo apt install libsqlite3-dev
-sudo apt install libeigein3-dev
+sudo apt install libeigen3-dev
 sudo apt install gawk
 ```
 
