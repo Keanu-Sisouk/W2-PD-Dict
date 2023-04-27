@@ -90,7 +90,7 @@ Both of those scripts will ask you the number of threads allocated for the exper
 sentence appears `Please chose the number of threads: ` type it and press enter.
 Some warnings and "errors" from Paraview are expected, they do not cause any problems.
 A time table will appear at the end in the terminal.
-The outputs of the experiments (the dictionary and the weights) can be found in the `Outputs` directory
+The outputs of the experiments (the dictionaries and the weights) can be found in the generated `Outputs` directory
 in a vtm format for the former and in a csv format for the latter.
 
 
