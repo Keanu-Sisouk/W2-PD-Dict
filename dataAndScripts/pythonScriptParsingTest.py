@@ -80,7 +80,7 @@ dataName = ["Asteroid impact","Dark matter","Earthquake","Ionization Front 3D","
     
 print("+-----------------------------------+")
 print("|{: <25}|{: <10}|".format("Data Set", "Progressive"))
-for name,t_naiv,t_prog in zip(dataName,time_prog):
+for name,t_prog in zip(dataName,time_prog):
     result = {"name": name, "progressive": t_prog}
     # Affichage avec délimitations graphiques
     print("+-----------------------------------+")
