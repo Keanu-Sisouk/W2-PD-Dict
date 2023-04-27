@@ -73,20 +73,21 @@ export PYTHONPATH=$PYTHONPATH:$TTK_PREFIX/lib/python3.10/site-packages
 Go in the root directory and then go in the `dataAndScripts` directory:
 
 #### Table 1
-You have two options, to reproduce the fifth line of the fifth column you can run the following line:
+There are two options, first to reproduce the fifth line of the fifth column you can run the following line:
 
 ```bash
 python3 pythonScriptTestOneLine.py
 ```
 
 To reproduce the whole fifth column you can run:
+
 ```bash
 python3 pythonScriptParsingTest.py
 ```
 
 Both of those scripts will ask you the number of threads allocated for the experiments when the following
 sentence appears `Please chose the number of threads: ` type it and press enter.
-Some warnings and "errors" from Paraview are expected, they should not cause any problems.
+Some warnings and "errors" from Paraview are expected, they do not cause any problems.
 A time table will appear at the end in the terminal.
 The outputs of the experiments (the dictionary and the weights) can be found in the Outputs directory
 in a vtm format for the former and in a csv format for the latter.
