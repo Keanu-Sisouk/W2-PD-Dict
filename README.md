@@ -88,7 +88,7 @@ To reproduce the whole fifth column you can run:
 python3 pythonScriptParsingTest.py
 ```
 
-Both of those scripts will ask you the number of threads allocated for the experiments.
+Both of those scripts will ask you the number of threads allocated for the experiments, type it and press enter.
 Some warnings from Paraview are expected, they should not cause any problems.
 A time table will appear at the end in the terminal.
 The outputs of the experiments (the dictionary and the weights) can be found in the Outputs directory
