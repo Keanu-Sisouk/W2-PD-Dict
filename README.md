@@ -14,6 +14,7 @@ sudo apt install python3-sklearn
 sudo apt install libsqlite3-dev
 sudo apt install libeigen3-dev
 sudo apt install gawk
+sudo apt install git
 ```
 
 ### Install Paraview
