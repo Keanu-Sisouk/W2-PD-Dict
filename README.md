@@ -46,7 +46,7 @@ export PYTHONPATH=$PV_PREFIX/lib/python3.10/site-packages
 
 ### Install TTK
 
-Go in the `ttk-sisouk-newMethodCompression` directory then run the following commands:
+Go in the `ttk-newMethodCompression` directory then run the following commands:
 (replace the `5` in `make -j 5` by the number of available cores on your system)
 
 ```
