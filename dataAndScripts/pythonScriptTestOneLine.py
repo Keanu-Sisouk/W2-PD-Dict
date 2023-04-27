@@ -47,13 +47,14 @@ for log in last_logs_list_prog:
 
 dataName = ["Isabel"]
 
+print("+-----------------------------------+")
 print("|{: <25}|{: <10}|".format("Data Set", "Progressive"))
 for name,t_prog in zip(dataName,time_prog):
     result = {"name": name,"progressive": t_prog}
     # Affichage avec délimitations graphiques
-    print("+-------------------+")
+    print("+-----------------------------------+")
     print("|{: <25}|{: <10.3f}|".format(result["name"], result["progressive"]))
-    print("+-------------------+")
+    print("+-----------------------------------+")
 
 
 

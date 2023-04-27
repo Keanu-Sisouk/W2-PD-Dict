@@ -72,20 +72,20 @@ for log in last_logs_list_prog:
         time_str = match.group(1)
         time_seconds = float(time_str)
         time_prog.append(time_seconds)
-        print(time_seconds)
+        # print(time_seconds)
 
-print(time_prog)
+# print(time_prog)
 dataName = ["Asteroid impact","Dark matter","Earthquake","Ionization Front 3D","Isabel","Viscous Fingering","Cloud processes",
     "Ionization Front 2D", "Sea Surface Height", "Starting Vortex", "Street Vortex","Volcanic eruptions"]
     
-print("+-------------------+")
+print("+-----------------------------------+")
 print("|{: <25}|{: <10}|".format("Data Set", "Progressive"))
 for name,t_naiv,t_prog in zip(dataName,time_prog):
     result = {"name": name, "progressive": t_prog}
     # Affichage avec délimitations graphiques
-    print("+-------------------+")
+    print("+-----------------------------------+")
     print("|{: <25}|{: <10.3f}|".format(result["name"],result["progressive"]))
-    print("+-------------------+")
+    print("+-----------------------------------+")
     # print('+-----------+---------------+-----------------+')
     # print('| Ligne     | Naive (s)     | Progressive (s) |')
     # print('+-----------+---------------+-----------------+')
