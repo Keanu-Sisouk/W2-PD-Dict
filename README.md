@@ -75,6 +75,8 @@ Go in the root directory and then go in the dataAndScripts directory:
 ```bash
 cd dataAndScripts
 ```
+
+#### Table 1
 You have two options, to reproduce the fifth line of the fifth column you can run the following line:
 
 ```bash
