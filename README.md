@@ -68,6 +68,33 @@ export LD_LIBRARY_PATH=$TTK_PREFIX/lib:$LD_LIBRARY_PATH
 export PYTHONPATH=$PYTHONPATH:$TTK_PREFIX/lib/python3.10/site-packages
 ```
 
+### Get the result
+
+Go in the root directory and then go in the dataAndScripts directory:
+
+```bash
+cd dataAndScripts
+```
+You have two options, to reproduce the fifth line of the fifth column you can run the following line:
+
+```bash
+python3 pythonScriptTestOneLine.py
+```
+
+To reproduce the whole fifth column you can run:
+```bash
+python3 pythonScriptParsingTest.py
+```
+
+Both of those scripts will ask you the number of threads allocated for the experiments.
+Some warnings from Paraview are expected, they should not cause any problems.
+A time table will appear at the end.
+The outputs of the experiments (the Dictionary and the weights) can be found in the Outputs directory
+in a vtm format for the former and in a csv format for the latter.
+
+
+
+
 
 
 
