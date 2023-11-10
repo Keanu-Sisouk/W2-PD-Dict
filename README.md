@@ -4,7 +4,7 @@ This github repository contains the exact code used for the reference below.
 
 ## Reference
 
-If you plan to use this code to generate results for a scientific document, thanks for referencin the following publication:
+If you plan to use this code to generate results for a scientific document, thanks for referencing the following publication:
 
 "Wasserstein Dictionaries of Persistence Diagrams"
 Keanu Sisouk, Julie Delon, Julien Tierny
