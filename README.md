@@ -12,6 +12,8 @@ IEEE Transactions on Visualization and Computer Graphics, 2023.
 
 [Paper](https://arxiv.org/pdf/2304.14852.pdf)
 
+The instructions below explain how to install the software and how to reproduced the Table 1 of the reference above.
+
 
 ## Installation Note
 
