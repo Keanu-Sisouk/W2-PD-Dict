@@ -10,7 +10,7 @@ If you plan to use this code to generate results for a scientific document, than
 Keanu Sisouk, Julie Delon, Julien Tierny
 IEEE Transactions on Visualization and Computer Graphics, 2023.
 
-[Paper](https://arxiv.org/abs/2304.14852)
+[Paper](https://arxiv.org/pdf/2304.14852.pdf)
 
 
 ## Installation Note
