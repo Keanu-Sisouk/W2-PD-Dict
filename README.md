@@ -1,12 +1,12 @@
 # W2-PD-Dict
 
-This github repository contains the exact code used for the reference below. 
+This github repository contains the exact code used for the reference below.
 
 ## Reference
 
 If you plan to use this code to generate results for a scientific document, thanks for referencing the following publication:
 
-"Wasserstein Dictionaries of Persistence Diagrams"
+"Wasserstein Dictionaries of Persistence Diagrams"  
 Keanu Sisouk, Julie Delon, Julien Tierny
 IEEE Transactions on Visualization and Computer Graphics, 2023.
 
