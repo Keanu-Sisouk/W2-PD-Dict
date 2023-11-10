@@ -83,7 +83,7 @@ export PYTHONPATH=$PYTHONPATH:$TTK_PREFIX/lib/python3.10/site-packages
 
 ### Get the result
 
-The python files provided generate the running time results reported in Table 1 of the reference above.
+The python files provided generate the running time results reported in Table 1 of the reference above.  
 Go in the root directory and then go in the `dataAndScripts` directory:
 
 #### Table 1
