@@ -1,8 +1,21 @@
 # W2-PD-Dict
 
-Tested on Ubuntu 22.04.2 LTS.
+This github repository contains the exact code used for the reference below. 
+
+## Reference
+
+If you plan to use this code to generate results for a scientific document, thanks for referencin the following publication:
+
+"Wasserstein Dictionaries of Persistence Diagrams"
+Keanu Sisouk, Julie Delon, Julien Tierny
+IEEE Transactions on Visualization and Computer Graphics, 2023.
+
+[Paper](https://arxiv.org/abs/2304.14852)
+
 
 ## Installation Note
+
+Tested on Ubuntu 22.04.2 LTS.
 
 ### Install the dependencies
 
